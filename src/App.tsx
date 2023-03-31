@@ -8,6 +8,7 @@ import Exercicio02 from "./Exercicio02/exercicio02";
 import Exercicio03 from "./Exercicio03/exercicio03";
 import Exercicio04 from "./Exercicio04/exercicio04";
 import Exercicio05 from "./Exercicio05/exercicio05";
+import Exercicio06 from "./Exercicio06/exercicio06";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Exercicio03 />
       <Exercicio04 />
       <Exercicio05 />
+      <Exercicio06 />
     </div>
   );
 }

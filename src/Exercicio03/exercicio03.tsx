@@ -17,12 +17,12 @@ const Exercicio03 = () => {
         <input
           type="text"
           onChange={(e) => setDados((x) => ({ ...x, nome1: e.target.value }))}
-          placeholder="Digite a nome 2"
+          placeholder="Digite o nome 2"
         />
         <input
           type="text"
           onChange={(e) => setDados((x) => ({ ...x, nome2: e.target.value }))}
-          placeholder="Digite a nome 2"
+          placeholder="Digite o nome 2"
         />
         <input
           type="number"
