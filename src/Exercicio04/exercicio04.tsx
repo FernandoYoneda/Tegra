@@ -15,7 +15,7 @@ const Exercicio04 = () => {
       <h2>Exercício04</h2>
       <form>
         <input
-          size={120}
+          style={{ width: "220px" }}
           type="number"
           onChange={(e) =>
             setDados((x) => ({ ...x, precoUnitario: Number(e.target.value) }))
@@ -23,6 +23,7 @@ const Exercicio04 = () => {
           placeholder="Digite o valor unitário do produto"
         />
         <input
+          style={{ width: "270px" }}
           type="number"
           onChange={(e) =>
             setDados((x) => ({
