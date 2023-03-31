@@ -1,12 +1,16 @@
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import Terreno from "./Exercicio01/exercicio01";
+
+//componentes
+import Execicio01 from "./Exercicio01/exercicio01";
+import Exercicio02 from "./Exercicio02/exercicio02";
 
 function App() {
   return (
     <div className="App">
-      <Terreno />
+      <Execicio01 />
+      <Exercicio02 />
     </div>
   );
 }

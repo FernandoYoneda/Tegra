@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const Terreno = () => {
+const Execicio01 = () => {
   const [dados, setDados] = useState({ largura: 0, comprimento: 0, valor: 0 });
 
   const areaTerreno = dados.comprimento * dados.largura;
@@ -8,7 +8,7 @@ const Terreno = () => {
 
   return (
     <div>
-      <h2>Informações do terreno</h2>
+      <h2>Exercício01</h2>
       <form>
         <input
           type="number"
@@ -38,4 +38,4 @@ const Terreno = () => {
   );
 };
 
-export default Terreno;
+export default Execicio01;
