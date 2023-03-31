@@ -1,0 +1,41 @@
+import { useState } from "react";
+
+const Terreno = () => {
+  const [dados, setDados] = useState({ largura: 0, comprimento: 0, valor: 0 });
+
+  const areaTerreno = dados.comprimento * dados.largura;
+  const valorTerreno = areaTerreno * dados.valor;
+
+  return (
+    <div>
+      <h2>Informações do terreno</h2>
+      <form>
+        <input
+          type="number"
+          onChange={(e) =>
+            setDados((x) => ({ ...x, largura: Number(e.target.value) }))
+          }
+          placeholder="Digite a largura do terreno"
+        />
+        <input
+          type="number"
+          onChange={(e) =>
+            setDados((x) => ({ ...x, comprimento: Number(e.target.value) }))
+          }
+          placeholder="Digite a comprimento do terreno"
+        />
+        <input
+          type="number"
+          onChange={(e) =>
+            setDados((x) => ({ ...x, valor: Number(e.target.value) }))
+          }
+          placeholder="Digite a valor do terreno"
+        />
+        <input type="number" value={areaTerreno.toFixed(2)} />
+        <input type="number" value={valorTerreno.toFixed(2)} />
+      </form>
+    </div>
+  );
+};
+
+export default Terreno;
