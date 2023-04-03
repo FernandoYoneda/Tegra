@@ -47,7 +47,6 @@ const Exercicio06 = () => {
           }
         />
       </form>
-      A
     </div>
   );
 };

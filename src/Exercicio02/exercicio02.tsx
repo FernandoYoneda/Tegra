@@ -27,8 +27,14 @@ const Exercicio02 = () => {
           }
           placeholder="Digite a altura do retângulo"
         />
+        <br />
+        <label>Área</label>
         <input type="number" value={area.toFixed(4)} />
+        <br />
+        <label>Perímetro</label>
         <input type="number" value={perimetro.toFixed(4)} />
+        <br />
+        <label>Diagonal</label>
         <input type="number" value={diagonal.toFixed(4)} />
       </form>
     </div>

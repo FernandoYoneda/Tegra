@@ -23,6 +23,7 @@ const Exercicio05 = () => {
           placeholder="Digite o valor do raio do círculo"
         />
         <br />
+        <label>Área</label>
         <input type="number" value={area.toFixed(3)} />
       </form>
     </div>

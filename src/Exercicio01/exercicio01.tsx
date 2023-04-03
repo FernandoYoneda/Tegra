@@ -31,7 +31,11 @@ const Execicio01 = () => {
           }
           placeholder="Digite a valor do terreno"
         />
+        <br />
+        <label>Área do terreno</label>
         <input type="number" value={areaTerreno.toFixed(2)} />
+        <br />
+        <label>Preço do terreno</label>
         <input type="number" value={valorTerreno.toFixed(2)} />
       </form>
     </div>

@@ -44,6 +44,7 @@ const Exercicio04 = () => {
           placeholder="Digite dinheiro recebido"
         />
         <br />
+        <label>Troco</label>
         <input type="number" value={(troco > 0 ? troco : 0).toFixed(2)} />
       </form>
     </div>
