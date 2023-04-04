@@ -1,12 +1,5 @@
 import { useState } from "react";
 
-function baskara(a: number, b: number, c: number) {
-  var delta = Math.pow(b, 2) - 4 * a * c;
-  var x1 = (-b + Math.sqrt(delta)) / (2 * a);
-  var x2 = (-b - Math.sqrt(delta)) / (2 * a);
-  return [x1, x2];
-}
-
 const Exercicio12 = () => {
   const [dados, setDados] = useState({
     coeficienteA: 0,
@@ -23,12 +16,6 @@ const Exercicio12 = () => {
 
   const x2 =
     (-dados.coeficienteB - Math.sqrt(delta)) / (2 * dados.coeficienteA);
-
-  //   const [x1, x2] = baskara(
-  //     dados.coeficienteA,
-  //     dados.coeficienteB,
-  //     dados.coeficienteC
-  //   );
 
   return (
     <div>
