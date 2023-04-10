@@ -21,7 +21,6 @@ const Exercicio17 = () => {
           }
           placeholder="Digite o primeiro número"
         />
-        {}
         <input
           style={{ width: "220px" }}
           type="number"
