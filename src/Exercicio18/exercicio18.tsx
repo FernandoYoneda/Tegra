@@ -27,6 +27,7 @@ const Exercicio18 = () => {
       <h2>Exercício18</h2>
       <form>
         <label>Selecione tipos de temperaturas</label>
+        <br />
         <select
           onChange={(e) =>
             setDados((x) => ({
@@ -39,6 +40,7 @@ const Exercicio18 = () => {
           <option value={TiposTemperatura.celsius}>Celsius:</option>
           <option value={TiposTemperatura.fahrenheit}>Fahrenheit:</option>
         </select>
+        <br />
         <input
           style={{ width: "220px" }}
           type="number"
@@ -48,10 +50,11 @@ const Exercicio18 = () => {
               valor: Number(e.target.value),
             }))
           }
-          placeholder="Digite o segundo número"
+          placeholder="Digite a temperatura"
         />
-        <label htmlFor="">
-          Temperatura equivalente em{" "}
+        <br />
+        <label>
+          Temperatura equivalente em {""}
           {dados.tipo === TiposTemperatura.celsius ? "Fahrenheit" : "Celsius"}:
           {converterTemperatura(dados.tipo, dados.valor).toFixed(2)}
         </label>
