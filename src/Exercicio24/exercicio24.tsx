@@ -62,7 +62,7 @@ const Exercicio24 = () => {
               return [...x];
             })
           }
-          placeholder="Digite o quinto valorS"
+          placeholder="Digite o quinto valor"
         />
         <br />
 
